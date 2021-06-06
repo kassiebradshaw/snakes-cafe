@@ -73,3 +73,7 @@ Return to your terminal and type:
   * Added prompt when user tries to order something that's not on the menu
   * Case-insensitive verification comparing user's input to menu, and to user's current order
   * Created prompt notifying user of entire order upon quitting, and a custom message if they didn't order anything
+
+[PR for this lab submission](https://github.com/kassiebradshaw/snakes-cafe/pull/1)
+
+[Python Submission Instructions Link](https://codefellows.github.io/code-401-python-guide/reference/submission-instructions/labs/)
