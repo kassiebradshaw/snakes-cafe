@@ -2,18 +2,18 @@ from textwrap import dedent
 
 # this is the welcome text
 def print_welcome():
-    print("***************************************")
+    print("*" *39)
     print("**    Welcome to the Snakes Cafe!    **")
     print("**    Please see our menu below.     **")
     print("**                                   **")
     print("**  To quit at any time, type \"quit\" **")
-    print("***************************************")
+    print("*" *39)
 
 # this is the order prompt text
 def order_prompt():
-    print("************************************")
+    print("*" *39)
     print("** What would you like to order?  **")
-    print("************************************")
+    print("*" *39)
 
 menu = {
     "Wings": 0, 
@@ -31,7 +31,7 @@ menu = {
     "Unicorn Tears": 0,
 }
 
-menu_section = dedent("""
+menu_section = ("""
 Appetizers
 ----------
 {}
@@ -61,17 +61,17 @@ Drinks
 
 # if __name__ == "__main__":
 print_welcome()
-print("")
 
 print(menu_section)
 
 order_prompt()
 order = {}
 item = input('> ')
+
 while item != 'quit':
 
     if item.lower() not in [key.lower() for key in menu.keys()]:
-        print("**  Please order from the menu  **")
+        print("**  Please order from the menu or type 'quit' **")
         item = input ('> ')
 
     if item.lower() in [key.lower() for key in menu.keys()]:
